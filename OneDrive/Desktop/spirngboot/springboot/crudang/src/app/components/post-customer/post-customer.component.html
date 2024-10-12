@@ -1,0 +1,30 @@
+
+
+  <form [formGroup]="postCustomerForm">
+    <h2 class="head">Add New Customer</h2>
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" formControlName="name">
+      <div *ngIf="postCustomerForm.get('name')?.invalid && postCustomerForm.get('name')?.touched">
+        Name is required.
+      </div>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" formControlName="email">
+      <div *ngIf="postCustomerForm.get('email')?.invalid && postCustomerForm.get('email')?.touched">
+        <div *ngIf="postCustomerForm.get('email')?.errors?.['required']">Email is required.</div>
+        <div *ngIf="postCustomerForm.get('email')?.errors?.['email']">Invalid email address.</div>
+      </div>
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" formControlName="phone">
+      <div *ngIf="postCustomerForm.get('phone')?.invalid && postCustomerForm.get('phone')?.touched">
+        <div *ngIf="postCustomerForm.get('phone')?.errors?.['required']">Phone is required.</div>
+        <div *ngIf="postCustomerForm.get('phone')?.errors?.['pattern']">Invalid phone number.</div>
+      </div>
+    </div>
+      <button [disabled]="postCustomerForm.invalid" class="btn" (click) = "postCustomer()">ADD</button>
+  </form>
+

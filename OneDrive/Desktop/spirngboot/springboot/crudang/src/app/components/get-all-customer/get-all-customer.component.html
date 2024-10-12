@@ -1,0 +1,37 @@
+<!-- <button mat-raised-button (click) = "Openpop()" > Click </button> -->
+
+<div>
+  <h1 class="head">Customer List</h1>
+  <div  class="heading">
+
+    <!-- <button routerLink = "/customer" class="btn">Add New Customer</button> -->
+    <button (click)="Openpop()" class="btn">Add New Customer</button>
+
+  </div>
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let customer of customers">
+        <td> {{customer.name}}</td>
+        <td class="email1">{{customer.email}}</td>
+        <td>{{customer.phone}}</td>
+        <td class="td2"><button (click) = "delteCustomer(customer.id)" class="btn1">Delete</button>
+        <!-- <button routerLink = "/customer/{{customer.id}}" class="btn2">Update</button> -->
+        <button (click) ="openUpdatePopup(customer.id)" class="btn2">Update</button>
+
+      </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>

@@ -1,0 +1,67 @@
+
+.head{
+text-align: center;
+font-size: 40px;
+font-family: 'Times New Roman', Times, serif;
+text-transform: uppercase;
+text-decoration: underline;
+}
+.heading{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+}
+.btn{
+width: 100px;
+height: 40px;
+background-color: rgb(15, 67, 112);
+color: rgb(233, 233, 233);
+border-radius: 30px;
+cursor: pointer;
+}
+.table{
+  margin-left: 5%;
+  width: 90%;
+  margin-top: 50px;
+  border-collapse: collapse;
+  color: white;
+}
+table,th,td{
+ border: 4px solid black;
+ text-align: center;
+}
+td{
+  background-color: rgb(39, 59, 124);
+  color: white;
+  width: 20%;
+}
+th{
+  background-color: rgb(54, 31, 123);
+  margin: 10px;
+  padding: 10px;
+}
+.td2{
+  width: 20%;
+  padding: 10px;
+}
+.btn1{
+width: 100px;
+height: 40px;
+background-color: rgb(196, 32, 32);
+color: rgb(233, 233, 233);
+border-radius: 30px;
+cursor: pointer;
+}
+.btn2{
+  width: 100px;
+height: 40px;
+background-color: rgb(205, 241, 97);
+color: rgb(0, 0, 0);
+border-radius: 30px;
+cursor: pointer;
+padding-left: 10px;
+}
+/* .email1{
+  width: 100px;
+} */
+

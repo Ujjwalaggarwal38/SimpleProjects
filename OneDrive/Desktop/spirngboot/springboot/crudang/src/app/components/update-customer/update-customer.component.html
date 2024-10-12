@@ -1,0 +1,27 @@
+    <form [formGroup] = "updateCustomerForm">
+      <h2 class="head">Update Customer</h2>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="" required formControlName = "name">
+        <div *ngIf="updateCustomerForm.get('name')?.invalid && updateCustomerForm.get('name')?.touched">
+          Name is required.
+        </div>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="" required formControlName = "email">
+        <div *ngIf="updateCustomerForm.get('email')?.invalid && updateCustomerForm.get('email')?.touched">
+          <div *ngIf="updateCustomerForm.get('email')?.errors?.['required']">Email is required.</div>
+          <div *ngIf="updateCustomerForm.get('email')?.errors?.['email']">Invalid email address.</div>
+        </div>
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" required formControlName = "phone">
+        <div *ngIf="updateCustomerForm.get('phone')?.invalid && updateCustomerForm.get('phone')?.touched">
+          <div *ngIf="updateCustomerForm.get('phone')?.errors?.['required']">Phone is required.</div>
+          <div *ngIf="updateCustomerForm.get('phone')?.errors?.['pattern']">Invalid phone number.</div>
+        </div>
+      </div>
+      <button type="submit" (click) = "updateCustomer()" [disabled]="updateCustomerForm.invalid" class="btn">Update</button>
+    </form>
