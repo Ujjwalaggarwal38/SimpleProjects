@@ -1,0 +1,55 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+}
+.leftpart{
+    flex-basis: 50%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    flex-basis: 33%;
+    background-color: sandybrown;
+}
+.rightpart{
+    flex-basis: 50%;
+    height: 100%;
+    background-color: rgb(242, 240, 242);
+}
+.leftpart .content label{
+    background-color: black;
+    display: block;
+    color: white;
+    padding: 10px 0px;
+}
+.leftpart .content textarea{
+    width: 100%;
+    height:  68% ;
+    padding:10px;
+    outline: none;
+    border: none;
+    background-color: rgb(43, 9, 79);
+    color: white;
+}
+.rightpart label{
+    display: block;
+    padding: 10px;
+    background-color: rgb(4, 8, 7);
+    color: white;
+}
+.rightpart .iframe{
+    display: block;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 90%;
+}

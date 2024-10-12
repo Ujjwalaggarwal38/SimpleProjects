@@ -1,0 +1,41 @@
+*{
+    max-width: 100%;
+    max-height: 100%;
+}
+.container
+{
+    display: flex;
+    margin-left: 68.5vh;
+    margin-top: 20vh;
+}
+.input{
+    width: 72vh;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+}
+.un{
+    list-style: none;
+    padding-top: 1px;
+
+}
+li{
+    border: 1px solid black;
+    width: 80vh;
+    margin-top: .2vh;
+    padding-top: 1px;
+    
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.btn1{
+    margin-top: 15px ;
+    margin-bottom: 15px;
+}
+.btn2{
+    margin-top: 15px ;
+    margin-bottom: 15px;
+}

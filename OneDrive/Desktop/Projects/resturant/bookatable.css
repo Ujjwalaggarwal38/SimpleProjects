@@ -1,0 +1,56 @@
+.book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 199, 227);
+    
+}
+.image67{
+    height: 400px;
+    width: 500px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+.content8{
+    /* background-color: rgb(141, 214, 245); */
+    margin-top: 50px;
+
+}
+.head56{
+    margin-left: 40px;
+    font-size: 30px;
+
+}
+.head59{
+    margin-left: 40px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.form{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.first67{
+    display: flex;
+    gap: 10px;
+
+}
+.second67{
+    display: flex;
+    gap: 10px;
+}
+
+#textarea{
+    height: 40px;
+    width:190px;
+}
+#textarea1{
+    height: 40px;
+    width:193px;
+    margin-top: 20px;
+}
+#book{
+    height:50px ;
+    margin-top: 20px;
+    width: 410px;
+}

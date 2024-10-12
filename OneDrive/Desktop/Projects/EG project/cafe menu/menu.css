@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-image: url(./coffebeans.avif);  
+}
+.container{
+    border: none;
+    height: 175vh;
+    width: 100vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color:rgb(222,183, 136);
+}
+h1{
+    font-size: 7vh;
+    font-weight: 1000;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 2vh;
+    font-family: Impact, serif;
+    text-align: center;
+}
+.para{
+    font-family:'Arial';
+    font-weight: 2vh;
+    font-size: 4vh;
+    text-align:center;
+    text-emphasis: none;
+    margin-top: 0vh;
+    font-style: italic;
+}
+hr{
+    width: 95vh;
+    height: 1vh;
+    background-color: brown;
+    margin-left: 3vh;
+}
+h2{
+    font-size: 6vh;
+    font-weight: 1000;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 5vh;
+    font-family: Impact, serif;
+    text-align: center;
+}
+.image{
+    border: none;
+    border-radius: 200vh;
+    height: 16vh;
+    margin-left: 40vh;
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4vh;
+}
+.container3{
+    list-style: none;
+    margin-left:0vh;
+    margin-right: 40vh;
+    text-align: left;
+    line-height: 6vh;
+    font-family: 'Arial';
+}
+.container4{
+    list-style: none;
+    line-height: 6vh;
+    font-family: 'Arial';
+}
+.container5{
+    list-style: none;
+    line-height: 6vh;
+    margin-left: 10vh;
+    font-family: 'Arial';
+}
+.image1{
+    border: none;
+    border-radius: 200vh;
+    width: 16vh;
+    height: 16vh;
+    margin-left: 40vh;
+}
+#web{
+    font-weight: 5vh;
+    font-size: 4vh;
+    text-align:center;
+    /* text-emphasis: none; */
+    margin-top: 4vh;
+    letter-spacing: .1vh;
+    font-family: 'Arial';
+}
+a{
+    color: black;
+    
+}
+#webs{
+    font-weight: 5vh;
+    font-size: 4vh;
+    text-align:center;
+    /* text-emphasis: none; */
+    margin-top: 4vh;
+    letter-spacing: .1vh;
+    font-family: 'Arial';
+}

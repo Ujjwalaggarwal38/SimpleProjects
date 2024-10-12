@@ -1,0 +1,10 @@
+.appHeader{
+  background-color: #222;
+  height: 70px;
+  width: 1000px;
+  color: white;
+  text-align: center;
+}
+.appTitle{
+  font-size: 1.5em;
+}

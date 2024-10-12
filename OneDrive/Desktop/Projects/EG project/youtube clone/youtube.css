@@ -1,0 +1,139 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+ .threelines{
+    height: 4vh;
+    margin-left: 4vh;
+ }
+ .header{
+   display: flex;
+   height: 5vh;
+ }
+ .logo{
+   height: 4vh;
+   margin-left: 1.9vh;
+ }
+ .container{
+   font-family: "Roboto condensed";
+   font-weight: 800;
+   font-size: 3vh;
+   display: flex;
+   margin-top: 3vh;
+ }
+ .input{
+   margin-left: 38vh;
+   height: 6.4vh;
+   margin-top: .5vh;
+   width: 80vh;
+   border-right: none;
+   border: 1px solid black;
+   border-radius: 0px;
+   border-right: none;
+ }
+ .container{
+   display: flex;
+ }
+ .container1{
+   display: flex;
+ }
+ .button{
+   height: 7vh;
+   width: 7vh;
+   float: right;
+   margin-top: .5vh;
+   margin-left: 0vh;
+ 
+ }
+ .search{
+  
+   width: 3vh; 
+   cursor: pointer;
+ }
+ .mike{
+   height: 4vh;
+   width: 3.5vh;
+   margin-top: 1.8vh;
+   margin-left: 1vh;
+ }
+ .container3{
+   /* display: flex; */
+   margin-left: 28vh;
+ }
+ .third{
+   margin-top: 2.5vh;
+   height: 3vh;
+   margin-left: 1.6vh;
+   
+ }
+ .list{
+   margin-top: 5vh;
+ }
+ .three{
+   list-style: none;
+   margin-top: 0vh;
+   padding-left: 3vh;
+ }
+ .main{
+   display: flex;
+   margin-top: 0vh;
+   border-bottom: 1px solid black;
+   width: 38vh;
+ }
+ .list{
+   display: flex;
+   margin-top: 0vh;
+ }
+
+ .home{
+   margin-top: 2vh;
+   line-height: 6vh;
+ }
+ .image{
+   list-style: none;
+   margin-top: 0vh;
+ }
+ .image1{
+   height: 3.1vh;
+   margin-top: 3.7vh;
+   line-height: 6vh;
+  
+ }
+ .main2{
+   display: flex;
+   margin-top: 0vh;
+   width: 38vh;
+ }
+ .image3{
+   height: 2.6vh;
+   margin-top: 3.7vh;
+   line-height: 6vh;
+ }
+ .image2{
+   height: 3.1vh;
+   margin-top: 4.6vh;
+   line-height: 6vh;
+ }
+ .main3{
+   display: flex;
+ }
+ .babbar{
+   height: 10vh;
+ }
+ .mainbody1{
+   width: 38vh;
+   margin-top:4vh ;
+ }
+ .mainbody2{
+   border-top: 1px solid black;
+   background-color: rgba(240, 255, 255, 0.587);
+   margin-top: 5vh;
+   margin-left: 1vh;
+   width: 168vh;
+   height: 86vh;
+ }
+ .mainbody3{
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .content{
+   height: 40vh;
+   width: 41.5vh;
+ }

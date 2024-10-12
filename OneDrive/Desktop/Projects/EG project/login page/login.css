@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
+body{
+    background-color: #000000;
+}
+.cont{
+    height: 85.8vh;
+    width: 135vh;
+    display: flex;
+    margin-left: 40vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content:center;
+    background-color: rgb(61,140,114);
+    font-family: 'Open Sans', sans-serif;
+
+}
+.container{
+    background-color:aliceblue;
+    text-align :center;
+    border: none;
+    width : 80vh;
+    height:55vh;
+    margin-top: 14vh;
+    
+  
+}
+.user{
+    margin-top: 4vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    text-align: center;
+}
+h3{ 
+    color:rgb(61,140,114);
+    font-size: 17px;
+    text-align: left;
+    margin-left: 94px;
+    margin-bottom: 5px;
+}
+#name1{
+    margin-right: 8px;
+    font-size: 15px;
+}
+#name2{
+    margin-right: 10px;
+    font-size: 15px;
+ 
+}
+input{
+   border: none; 
+   border-bottom: 1px solid #000000;
+   background: transparent;
+   outline: none;
+   width: 300px;
+   
+}
+.login{
+    background-color: rgb(61,140,114);
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: 'Konkhmer Sleokchher', cursive;
+    font-weight:bolder;
+    color: aliceblue;
+
+}
+button{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 50vh;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

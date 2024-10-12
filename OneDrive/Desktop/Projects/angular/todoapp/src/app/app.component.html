@@ -1,0 +1,53 @@
+<div>
+  <h1>
+    Welcome to TODO app
+  </h1>
+  <form #todoForm="ngForm" (ngSubmit)="onSubmit(todoForm)">
+    <div >
+      <div>
+        <label for="title">Enter Task</label>
+        <input type="text" name="title" id="title" ngModel>
+      </div>
+      <div>
+        <button type="submit">add</button>
+      </div>
+    </div>
+  </form>
+
+
+<!-- list -->
+<ul *ngFor="let todo of todos">
+  <li *ngIf="!this.todo.isComplete">
+    <div>
+      <div>{{this.todo.title}}</div>
+      <div>
+        <button (click)="onComplete(this.todo.id)">check</button>
+
+        <button (click)="onDelete(this.todo.id)">delete</button>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+<!-- if not todo -->
+
+<div *ngIf="todos.length == 0">
+  Your Todo List is Empty!
+</div>
+
+
+<!-- list of completed -->
+<h1>Completed Tasks</h1>
+<hr>
+<ul *ngFor="let todo of todos">
+  <li *ngIf="this.todo.isComplete">
+    <div>
+      <div>{{this.todo.title}}</div>
+      <div>
+        <button (click)="onDelete(this.todo.id)" >delete</button>
+      </div>
+    </div>
+  </li>
+</ul>
+</div>

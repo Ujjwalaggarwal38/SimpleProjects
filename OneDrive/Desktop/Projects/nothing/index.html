@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            display: flex;
+        }
+        img{
+           display: flex;
+           margin-right:40vh;
+           margin-left: auto;
+           height: 80vh;
+        }
+        button{
+            margin-top: 40vh;
+            margin-right: 30vh;
+            height: 6vh;
+            width: 12vh;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="bulb" src="./off.png" alt="">
+    <button id="btn">
+        Turn on
+    </button>
+    </div>
+    
+    <script>
+        let button=document.getElementById('btn');
+        let bulb=document.getElementById('bulb');
+        button.addEventListener('click',toggle);
+        function toggle(){
+            if(button.textContent.includes('on') ){
+                bulb.src="./on.png";
+                button.textContent='Turn off';
+            }
+            else{
+                bulb.src="./off.png";
+                button.textContent='Turn on';
+            }
+        }
+
+    </script>
+</body>
+</html>

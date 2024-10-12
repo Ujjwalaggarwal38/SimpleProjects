@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course Page</title>
+    <link rel="stylesheet" href="course.css">
+</head>
+<body>
+  <div class="container">
+    <input type="text" placeholder="Enter" class="input">
+    <button class="btn" id="Add">Add</button>
+  </div>
+  <div class="container1">
+    <ul id="ullist" class="un">
+        <li class="item">
+         <h3 >Do this</h3> 
+         <button class="btn1" onclick="editchapter(this)">Edit</button>
+         <button class="btn2" onclick="removechapter(this)">Remove</button>
+        </li>
+      </ul>
+  </div>
+  <script>
+    let add=document.getElementById('Add');
+    add.addEventListener('click',addchapter);
+    let ullist=document.getElementById('ullist');
+    function addchapter(e){
+      if(ullist.children[0].className=="emptymsg"){
+        ullist.children[0].remove();
+      }
+        let currentbtn=e.currentTarget;
+        let input=currentbtn.previousElementSibling;
+        let currentchapter=input.value;
+        
+        let newli= document.createElement('li');
+        newli.classList.add('item');
+        //newli.className='item';
+        //newli.textContent=input.value;
+        newli.innerHTML=` <h3 >${currentchapter}</h3> 
+        <button class="btn1" onclick="editchapter(this)">Edit</button>
+        <button class="btn2"  onclick="removechapter(this)">Remove</button>`
+
+       // let ullist=document.getElementById('ullist');
+        ullist.appendChild(newli);
+    }
+    function  removechapter(currElement){
+      currElement.parentElement.remove();
+      if(ullist.children.length<=0){
+        let newmsg=document.createElement("h3");
+        newmsg.classList.add("emptymsg");
+        newmsg.textContent="Nothing is here. Please add one.";
+        ullist.appendChild(newmsg);
+      }
+    }
+    function editchapter(currElement){
+      if(currElement.textContent=="Done"){
+        currElement.textContent="Edit";
+        let currName=currElement.previousElementSibling.value;
+        let currheading=document.createElement('h3');
+        currheading.textContent=currName;
+        currElement.parentElement.replaceChild(currheading,currElement.previousElementSibling);
+      }
+      else{
+        currElement.textContent="Done";
+      let currName=currElement.previousElementSibling.textContent;
+      let currInput=document.createElement('input');
+      currInput.type="text";
+      currInput.placeholder="Chapter Name";
+      currInput.class="btn1";
+      currInput.value=currName;
+
+      currElement.parentElement.replaceChild(currInput,currElement.previousElementSibling);
+      }
+      
+
+    }
+  </script>
+ 
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    background-color: rgb(50, 164, 225);
+    overflow: hidden;
+    
+}
+.container{
+    border-radius: 2vh;
+    margin-top: 20vh;
+    margin-left: 40vh;
+    max-width: 100%;
+    margin-right: 40vh;
+    text-align: center;
+    width: 600px;
+    background-color: antiquewhite;
+}
+h3{
+    background-color: antiquewhite;
+    padding-top: 4vh;
+    font-size: 5vh;
+}
+.joke{
+    padding-top: 7vh;
+    font-size: 5vh;
+    max-width: 600px;
+    background-color: antiquewhite;
+}
+.btn{
+    margin-top: 18vh;
+    height: 7vh;
+    font-size: 3vh;
+    background-color: rgb(176, 236, 71);
+    border: none;
+    color: rgb(49, 37, 137);
+    cursor: pointer;
+}

@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#firstpage{
+background-image: url(./89781.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+color: white;
+height: 47vw;
+}
+.navitems{
+    display: flex;
+    gap: 40vw;
+    font-size: 2.3vw;
+}
+.navhead{
+    margin: 3vw;
+    padding-left: 3vw;
+    font-weight: bold;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 6vw;
+    margin-top: 3vw;
+}
+.nav{
+    text-decoration: none;
+    color: white;
+
+}
+.nav:hover{
+    color:rgb(27, 27, 247);
+}
+.intro{
+    text-align: center ;
+    margin-top: 7vw;
+}
+.para{
+    margin-right: 26vw;
+    font-size: 1.8vw;
+    display: inline-block;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color:white;
+    border-radius: .8vw;
+    color: black;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.heading1{
+    font-size: 4.5vw;
+    margin-top: 1vw;
+}
+.name1{
+    font-size: 4.5vw;
+    margin-top: 1vw;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+      opacity: .4;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+.heading2{
+    font-size: 4.5vw;
+    margin-top: 1vw;
+}
+.list2{
+    display: flex;
+    margin-top: 1vw;
+    justify-content: center;
+    list-style: none;
+    gap: 2vw;
+}
+.logo{
+    height: 2.4vw;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+#skills{
+    background-image: url(./skills\ bG.jpg);
+    height: 47vw;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+.sk{
+    font-size:9vh;
+    padding-top: 7vh;
+    text-decoration: underline;
+
+}
+.section{
+    display: flex;
+    gap: 80vh;
+    margin-left: 45vh;
+    margin-top: 5vh;
+    text-decoration: underline;
+}
+.front{
+    font-size: 6vh;
+}
+.logo2{
+    height: 10vh;
+    margin-top: 8vh;
+}
+.logo3{
+    height: 10vh;
+    margin-top: 5.3vh;
+}
+#aboutme{
+    background-image: url(./about\ me\ 22.jpg);
+    height: 47vw;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+.about{
+    font-size:9vh;
+    padding-top: 7vh;
+    text-decoration: underline;
+
+}
+.para2{
+    margin-top: 10vh;
+    margin-left: 35vh;
+    margin-right: 35vh;
+    font-size: 4.5vh;
+}
+#contact{
+    background-image: url(./contact.jpg);
+    height: 47vw;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+.out{
+    font-size:9vh;
+    padding-top: 2vh;
+    text-decoration: underline;
+    text-align: center;
+}
+.form{
+    height: 80vh;
+    width: 80vh;
+    border-radius: 4vh;
+    background-color: white;
+    color: black;
+    margin-top: 5vh;
+    margin-left: 30vh;
+}
+.item{
+    padding-top: 4vh;
+    padding-left: 6vh;
+}
+.input{
+    padding-top: 2vh;
+    display: flex;
+    padding-left: 6vh;
+    gap: 4vh;
+
+}
+.firstname{
+    height: 6vh;
+    width: 33vh;
+}
+.lastname{
+    padding-left: 10vh;
+    height: 6vh;
+    width: 33vh;
+}
+.write{
+    display: flex;
+    padding-left: 6vh;
+}
+.first{
+    font-size: 2.5vh;
+
+}
+.last{
+    font-size: 2.5vh;
+    padding-left: 27vh;
+}
+.mail{
+    height: 6vh;
+    margin-left: 6vh;
+    width: 70vh;
+}
+.box{
+    height: 20vh;
+    margin-left: 6vh;
+    width: 70vh;
+}
+.button{
+    margin-left: 29vh;
+    margin-top: 5vh;
+    font-size: 5vh;
+    border-radius: 2vh;
+    width: 23vh;
+}
+.button:hover{
+    color: darkgrey;
+}

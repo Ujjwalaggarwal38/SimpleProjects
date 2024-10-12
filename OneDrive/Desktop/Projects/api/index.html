@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    <script>
+        const container=document.querySelector('#container');
+        const request=new XMLHttpRequest();
+        request.open('GET',"https://restcountries.eu/rest/v2/name/nepal");
+        request.send();
+        //to get response
+        request.addEventListener('load', function(){
+           //const data = this.responseText;
+           console.log(this.responseText);
+        })
+    </script>
+</body>
+</html>

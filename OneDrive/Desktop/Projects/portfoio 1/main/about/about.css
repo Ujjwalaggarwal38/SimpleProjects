@@ -1,0 +1,40 @@
+*{
+    background-color: aqua;
+}
+.container{
+    margin-top: 110px;
+    margin-left: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+.text{
+    margin-top: 30px;
+    margin-left: 85px;
+    margin-right: 200px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+.sec{
+    margin-top: 30px;
+    margin-left: 85px;
+    margin-right: 210px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+ul{
+   
+    list-style-position: inside;
+    
+}
+.image1{
+    height: 50vh;
+    width: 40vh;
+    margin-top: 25vh;
+    margin-right: 35vh;
+    border-radius: 4vh;
+}
+.container2{
+    display: flex;
+}
